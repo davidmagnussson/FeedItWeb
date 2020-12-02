@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 :root {
     --font-color: grey;
     --active-color: #eee;
@@ -9,10 +12,11 @@ body{
     left: 0px;
     margin: 0px;
     color: var(--active-color);
+    font-family: 'VT323', monospace;
 }
 
 #landingPage{
-    background-image: url('./images/Backdrop.png');
+    background-image: url('./images/FeedITPOSTER.png');
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--active-color);
@@ -27,7 +31,7 @@ body{
     top:0px;
     left: 0px;
     background-color: #2A9D8F;
-    opacity: 0.6;
+    opacity: 0.5;
     z-index: 1;
 }
 
@@ -70,6 +74,10 @@ ol li{
     font-size: 30px;
 }
 
+.activeSlide {
+    text-decoration: underline;
+}
+
 li:hover {
     text-decoration: underline;
 }
@@ -78,6 +86,7 @@ li:hover {
     text-align: center;
     margin-top: 0px;
     color: #F4A261;
+    font-size: 50px;
 }
 
 #about {
@@ -109,6 +118,7 @@ li:hover {
 
 #demo h2{
     margin-top: 0px;
+    font-size: 45px;
 }
 
 #game_container{
@@ -129,6 +139,7 @@ li:hover {
     padding-top: 20px;
     margin-top: 0px;
     color: #F4A261;
+    font-size: 50px;
 }
 
 #team {
@@ -142,7 +153,8 @@ li:hover {
 }
 
 #team h2 {
-    margin-top: 0px;
+    margin-top: 0px; 
+    font-size: 30px;
 }
 
 .teamMembers {
@@ -156,11 +168,13 @@ li:hover {
 }
 
 .memberImage img {
-    /* height: fit-content;
-    width: fit-content; */
+    object-fit: cover;
     border-radius: 10px;
 }
 
+h1, h2, h3 {
+    letter-spacing: 5px;
+}
 
 /* STYLING OF UNITY GAME */
 .webgl-content * {border: 0; margin: 0; padding: 0}

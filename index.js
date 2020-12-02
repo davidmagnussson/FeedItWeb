@@ -7,10 +7,22 @@ window.addEventListener("load", (e) => {
     NavItems = document.getElementsByClassName("NavOptions");
     
     Array.from(NavItems).forEach((element) => {
-            console.log(element);
-            element.addEventListener("click", (e) => {
-                ScrollTo = navigationDict[e.target.id];
-                document.getElementById(ScrollTo).scrollIntoView({behavior: "smooth", block: "center"});
-        });
+            element.addEventListener("click", changeSlide);
     })
 });
+
+
+const changeSlide = (element) => {
+    console.log(element);
+    ScrollTo = navigationDict[element.target.id];
+    document.getElementById(ScrollTo).scrollIntoView({behavior: "smooth", block: "center"});
+
+    NavItems = document.getElementsByClassName("NavOptions");
+    Array.from(NavItems).forEach((element) => {
+      if(element.classList.contains("activeSlide")){
+        element.classList.remove("activeSlide")
+      }
+    });
+
+    element.target.classList.add("activeSlide");
+}

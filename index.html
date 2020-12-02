@@ -7,18 +7,19 @@
 
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Unity WebGL Player | FeedIt</title>
         <link rel="shortcut icon" href="TemplateData/favicon.ico">
         <link rel="stylesheet" href="TemplateData/style.css">
         <script src="TemplateData/UnityProgress.js"></script>
         <script src="Build/UnityLoader.js"></script>
         <script>
-        var unityInstance = UnityLoader.instantiate("unityContainer", "Build/FeedIt.json", {onProgress: UnityProgress});
+          var unityInstance = UnityLoader.instantiate("unityContainer", "Build/FeedIt.json", {onProgress: UnityProgress});
         </script>
     </head>
     <body>
         <div id="landingPage">
             <ol>
-                <li id="NavHome" class="NavOptions">Home</li>
+                <li id="NavHome" class="NavOptions activeSlide">Home</li>
                 <li id="NavAbout" class="NavOptions">About</li>
                 <li id="NavDemo" class="NavOptions">Demo</li>
                 <li id="NavTeam" class="NavOptions">Team</li>
@@ -50,7 +51,7 @@
                           <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
                           <div class="title">FeedIt</div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
             <div id="team_container">
@@ -58,42 +59,42 @@
                 <div id="team">
                     <div id="member1" class="teamMembers">
                         <h2>
-                            Member1
+                            David
                         </h2>
                         <div class="memberImage">
-                            <img src="images/David.jpg" height="200px" width="180px" />
+                            <img src="./images/Members/David.jpg" height="200px" width="180px" />
                         </div>
                     </div>
                     <div id="member2" class="teamMembers">
                         <h2>
-                            Member2
+                            Björn
                         </h2>
                         <div class="memberImage">
-                            <img src="images/David.jpg" height="200px" width="180px" />
+                            <img src="./images/Members/Björn.jpg" height="200px" width="180px" />
                         </div>
                     </div>
                     <div id="member3" class="teamMembers">
                         <h2>
-                            Member3
+                            Hugo
                         </h2>
                         <div class="memberImage">
-                            <img src="images/David.jpg" height="200px" width="180px" />
+                            <img src="./images/Members/Hugo.png" height="200px" width="180px" />
                         </div>
                     </div>
                     <div id="member4" class="teamMembers">
                         <h2>
-                            Member4
+                            Kristoffer
                         </h2>
                         <div class="memberImage">
-                            <img src="images/David.jpg" height="200px" width="180px" />
+                            <img src="./images/Members/Kristoffer.png" height="200px" width="180px" />
                         </div>
                     </div>
                     <div id="member5" class="teamMembers">
                         <h2>
-                            Member5
+                            Lilly
                         </h2>
                         <div class="memberImage">
-                            <img src="images/David.jpg" height="200px" width="180px" />
+                            <img src="./images/Members/Lilly.jpg" height="200px" width="180px" />
                         </div>                                          
                     </div>
                 </div>
