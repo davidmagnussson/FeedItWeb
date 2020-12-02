@@ -12,7 +12,7 @@ body{
 }
 
 #landingPage{
-    background-image: url('./images/spelunky2.jpeg');
+    background-image: url('./images/Backdrop.png');
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--active-color);
@@ -104,7 +104,7 @@ li:hover {
 
 #demo {
     width: 100%;
-    height: 600px;
+    height: fit-content;
 }
 
 #demo h2{
@@ -113,10 +113,10 @@ li:hover {
 
 #game_container{
     height: 100%;
-    width: 600px;
+    width: 960px;
     margin: auto;
     text-align: center;
-    background-color: lightcoral;
+    padding: 20px;
 }
 
 #team_container{
@@ -159,4 +159,13 @@ li:hover {
     /* height: fit-content;
     width: fit-content; */
     border-radius: 10px;
+}
+
+
+/* STYLING OF UNITY GAME */
+.webgl-content * {border: 0; margin: 0; padding: 0}
+
+.webgl-content {
+    width: 100%;
+    height: 100%;
 }
