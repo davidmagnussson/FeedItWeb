@@ -167,10 +167,47 @@ li:hover {
     color: #E9C46A;
 }
 
+.memberImage{
+    position: relative;
+}
+
 .memberImage img {
     object-fit: cover;
     border-radius: 10px;
 }
+
+/* Image overlay */
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    top: 0;
+    background-color: #2A9D8F90;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    border-radius: 10px;
+  }
+  
+  .memberImage:hover .overlay {
+    bottom: 0;
+    height: 200px;
+  }
+  
+  .text {
+    /* white-space: nowrap;  */
+    width: 80%;
+    text-align: center;
+    color: #eee;
+    font-size: 24px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
 
 h1, h2, h3 {
     letter-spacing: 5px;
