@@ -269,6 +269,11 @@ li:hover {
     word-break: break-all;
   }
 
+  .emails {
+      color: var(--active-color);
+      text-decoration: none;
+  }
+
 h1, h2, h3 {
     letter-spacing: 5px;
 }
