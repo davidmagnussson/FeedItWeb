@@ -121,12 +121,17 @@ ol {
     top: 0px;
     right: 0px;
     z-index: 3;
+    cursor: default;
 }
 
 ol li{
     display: inline;
     padding: 20px;
     font-size: 30px;
+}
+
+ol li:hover{
+    cursor: pointer;
 }
 
 .activeSlide {
