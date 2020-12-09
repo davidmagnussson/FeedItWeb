@@ -5,6 +5,7 @@
     --font-color: grey;
     --active-color: #eee;
     --background-color: #264653;
+    --font: 'VT323', 'monospace';
 }
 
 body{
@@ -12,7 +13,7 @@ body{
     left: 0px;
     margin: 0px;
     color: var(--active-color);
-    font-family: 'VT323', monospace;
+    font-family: var(--font);
 }
 
 #landingPage{
@@ -52,7 +53,7 @@ body{
 
 #playButton--container h2, #playButton--container h1 {
     margin-top: 0px;
-    font-family: 'VT323', monospace;
+    font-family: var(--font);
     text-align: center;
     color: var(--active-color);
 }
@@ -74,7 +75,7 @@ body{
     width: 100px;
     height: 60px;
     font-size: 20px;
-    font-family: 'VT323', 'monospace';
+    font-family: var(--font);
     border-radius: 5px;
     border: 2px solid #E9C46A;
     background-color: #F4A26120;
@@ -93,26 +94,6 @@ body{
 .download_button:focus{
     outline: 0;
 }
-
-
-/* #playButton{
-    width: 150px;
-    height: 80px;
-    border: 1px solid grey;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    background-color: rgba(238, 238, 238, 0.1);
-    color: var(--font-color);
-    font-size: 30px;
-} */
-
-/* #playButton:hover{
-    font-weight: 900;
-    background-color: rgba(238, 238, 238, 0.8);
-} */
 
 ol {
     margin: 0px 0px;
@@ -193,6 +174,7 @@ li:hover {
     height: fit-content;
     text-align: center;
     background-color:var(--background-color);
+    padding-bottom: 70px;
 }
 
 #team_container h1{
@@ -280,6 +262,32 @@ li:hover {
   }
 
 h1, h2, h3 {
+    letter-spacing: 5px;
+}
+
+#footer {
+    width: 100%;
+    height: 80px;
+    /* background-color: #2a9d8f;
+    color: var(--active-color); */
+
+    /* background-color:var(--background-color);
+    color: #E9C46A; */
+
+    background-color: #F4A261;
+    color: var(--background-color);
+
+
+    font-family: var(--font);
+    text-align: center;
+    font-size: 20px;
+}
+
+#footer p {
+    margin: 0px;
+    margin-top: 0px;
+    padding-top: 20px;
+    box-shadow: 0px -10px 10px #2B2D2F70;
     letter-spacing: 5px;
 }
 
