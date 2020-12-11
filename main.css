@@ -97,7 +97,7 @@ body{
 
 ol {
     margin: 0px 0px;
-    padding: 0px 0px;
+    padding: 10px 20px;
     position: fixed;
     top: 0px;
     right: 0px;
@@ -302,4 +302,10 @@ h1, h2, h3 {
 #unityContainer{
     width: 640px;
     height: 360px;
+}
+
+
+
+.disabled{
+    opacity: 20%;
 }
